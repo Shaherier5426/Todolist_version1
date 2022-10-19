@@ -17,6 +17,10 @@ in a Mongo DB database which resides the cloud services called Mongo Atlas
 
 
 
+
+https://user-images.githubusercontent.com/81315922/196754539-a5befc02-06d3-479e-a766-2d62c23cb328.mp4
+
+
 ---- Coming soon ------
 I plan to implement a weather widget where the user can see the weather conditon like tempature, small discription of the weather
 and more. 
