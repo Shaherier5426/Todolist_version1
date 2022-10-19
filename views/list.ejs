@@ -1,0 +1,59 @@
+<%- include("header") -%>
+
+
+<div class = "box" id = "heading" >
+    <h1><%= worktitle %></h1>
+   </div>
+
+
+<div class = "box">
+    <% item.forEach(element =>{ %>
+        <form action="/delete" method="post">
+        <div class ="item">
+            <input type="checkbox" name = "checkbox" value ="<%=element._id%>"onChange="this.form.submit()"> 
+            <p> <%= element.name %> </p>
+        </div>
+    </form>
+    <% }) %>
+    
+    <form action="/" method="post" class = "item">
+        <input type="text" name = "newItem" placeholder="New Items" autocomplete="off">
+        <button  type = "submit" name = "list" value ="<%= worktitle %>">+</button>
+     </form>
+
+    </form>
+    
+
+</div>
+
+<div>
+    <form action="/" method="post" class = "item">
+
+    
+
+
+
+
+
+
+
+
+        
+    <h1 class = "status"></h1>
+    <h1 class = "temp" ></h1>
+    <p class = "desp"></p>
+    <img class = temp_img> 
+
+    <button class = "fstate" type = "submit" name = "Weather" value = "Weather" >Find my location</button>
+    
+</form>
+</div>
+</div>
+
+
+<% if(msg =="one"){%>
+    <% alert("need al least one item")%>
+<%}%>
+
+
+<%- include("footer") -%>
